@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Books Shop</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <img class="logo" src="img/book logo.png" alt="" srcset="">
+        <h1>Your Online BookShop</h1>
+    </header>
+    <div class="book-shelf">
+        <input class="book-search" type="search" name="book-search" placeholder="Search a book" id="">
+        <!-- <img src="img/shelf.jpg" alt="" srcset=""> -->
+        <section class="books-sort">
+            <label for="sort-by">Sort By:</label>
+            <select onchange="onSetSort(this.value)" id="sort-by">
+                <option value="none">None</option>
+                <option value="title">Title</option>
+                <option value="rating">Rating</option>
+            </select>
+        </section>
+    </div>
+    <p><span class="create-book" onclick="onRevealBookAdd()">Create New Book</span></p>
+    <div class="book-details">
+        <input name="bookName" type="text" placeholder="Enter Book Name">
+        <input name="bookPrice" type="num" placeholder="Enter Book Price">
+        <button class="add-book" type="button" onclick="onCreateBook()">+</button>
+        <button class="close-modal" type="button" onclick=" onCloseCreateModal()">Close</button>
+    </div>
+    <table class="books-container" border="0"></table>
+    <div class="update">
+        <input name="newBookPrice" type="number" placeholder="Enter New Price">
+        <button class="update-book" type="button" onclick="onUpdateBook()">Update</button>
+    </div>
+    <button onclick="onNextPage()">Next</button>
+    <div class="modal" hidden>
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+        <div class="rate">
+            <button class="rate-down" onclick="onDecreaseRate()">-</button>
+            <p class="book-rate">0</p>
+            <button class="rate-up" onclick="onIncreaseRate()">+</button>
+        </div>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+    <script src="js/utils-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/books-controller.js"></script>
+</body>
+
+</html>

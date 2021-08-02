@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+}
+
+header {
+    /* display: flex; */
+    /* background-color: #4c394e; */
+    background-color: #573ba3;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px rgba(98, 98, 98, 0.342);
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.book-shelf img {
+    width: 100vh;
+    height: 200px;
+}
+
+.book-search {
+    margin-left: 25vh;
+    width: 70vh;
+}
+
+.logo {
+    box-sizing: border-box;
+    float: left;
+    /* margin-top: 80px; */
+    width: 200px;
+    height: 50px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    min-width: 10vh;
+}
+
+.create-book {
+    display: flex;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 15%;
+    min-width: 7vh;
+}
+
+.book-details {
+    display: none;
+}
+
+.book-rate p {
+    text-align: left;
+}
+
+.book-rate {
+    display: inline-flex;
+    justify-content: center;
+    width: 60px;
+    background-color: rgba(251, 218, 164, 0.527);
+    border-radius: 15%;
+}
+
+.update {
+    display: none;
+}
+
+.book-read button {
+    background-color: rgb(87, 112, 255);
+}
+
+.book-update button {
+    background-color: rgb(253, 179, 42);
+}
+
+.book-delete button {
+    background-color: rgb(243, 74, 74);
+}
+
+.info .title {
+    text-align: left;
+    width: 30vh
+}
+
+.info td {
+    text-align: center;
+    width: 20vh
+}
+
+.book-id {
+    text-align: center;
+}
+
+.book-price {
+    text-align: center;
+}
+
+img {
+    width: 70px;
+}
+
+.modal {
+    border-style: ridge;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: rgba(98, 98, 98, 0.342);
+    /* display: flex; */
+    background-image: url(../img/book\ page.jpg);
+    margin: auto;
+    max-height: 75vh;
+    width: 100vh;
+}

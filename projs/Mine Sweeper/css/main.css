@@ -1,0 +1,103 @@
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55rem;
+}
+
+.header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.radio-btn {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, cursive;
+    font-size: 20px;
+}
+
+.lives {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.lives span {
+    color: red;
+}
+
+.field table {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgba(241, 229, 112, 0.884);
+}
+
+.board td {
+    transition: 200ms;
+    box-sizing: border-box;
+    padding: 0.5px;
+    border-radius: 15%;
+    border-color: black;
+    width: 30px;
+    height: 30px;
+    max-height: 30px;
+    max-width: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.board td:hover {
+    transition: 700ms;
+    background-color: rgb(83, 166, 218);
+}
+
+.data {
+    text-align: center;
+    margin-top: -100px;
+}
+
+.stopwatch {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.smiley {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-top: 25px;
+    margin-left: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.easy {
+    color: rgb(238, 83, 238);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hard {
+    color: rgb(83, 166, 218);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.extreme {
+    color: tomato;
+    font-size: 25px;
+    cursor: pointer;
+}
